@@ -1,0 +1,29 @@
+.drawer-container {
+    height: calc(100vh - 64px) !important;
+}
+
+mat-drawer {
+    width: 150px;
+}
+
+mat-list-item:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+mat-icon {
+    margin-right:  5px;
+}
+
+.menu-list {
+    overflow: hidden;
+    
+    mat-list-item .mat-mdc-list-item-unscoped-content {
+        display: flex;
+        align-items: center;
+    }
+}
+
+mat-drawer-content {
+    padding: 3rem;
+}
