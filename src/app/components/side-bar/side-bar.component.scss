@@ -26,5 +26,9 @@ mat-icon {
 
 mat-drawer-content {
     padding: 3rem;
-    background-color: #FCFCFC;
+    // background-color: #FCFCFC;
+}
+
+.mat-drawer-container {
+    color: #000000 !important;
 }

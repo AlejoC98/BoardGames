@@ -13,7 +13,8 @@ export class GameService {
 
   searchByName(keyword: string): Observable<Game> {
     const alterKeyWord = keyword.replace(/\s/g, '+');
-    return this.http.get<Game[]>(`https://api.boardgameatlas.com/api/search?name=${alterKeyWord}&client_id=${environment.boardgameAPI}`).pipe(
+    console.log(environment.boardGameAPI);
+    return this.http.get<Game[]>(`https://api.boardgameatlas.com/api/search?name=${alterKeyWord}&client_id=${environment.boardGameAPI}`).pipe(
       map(response => response['games'])
     )
   };
