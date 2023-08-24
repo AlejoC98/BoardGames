@@ -1,9 +1,10 @@
-.drawer-container {
+mat-drawer-container.drawer-container {
     height: calc(100vh - 64px) !important;
 }
 
-mat-drawer {
+mat-drawer.mat-drawer {
     width: 150px;
+    background-color: #06D6A0;
 }
 
 mat-list-item:hover {
@@ -17,7 +18,6 @@ mat-icon {
 
 .menu-list {
     overflow: hidden;
-    
     mat-list-item .mat-mdc-list-item-unscoped-content {
         display: flex;
         align-items: center;
@@ -26,4 +26,5 @@ mat-icon {
 
 mat-drawer-content {
     padding: 3rem;
+    background-color: #FCFCFC;
 }
